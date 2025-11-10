@@ -24,6 +24,7 @@ const Contact = () => {
   const socials = [
     { icon: Github, label: "GitHub", href: "https://github.com/IdreesDehistani" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/idrees-dehistani-63734621a/" },
+    {icon: }
   ];
 
   return (
