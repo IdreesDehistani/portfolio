@@ -1,11 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, FileText, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import paper1 from "@/assets/papers/paper1.pdf";
 
 const PaperDetail = () => {
   const { paperId } = useParams();
-
-  // Sample paper data - replace with your actual papers
   const papers: Record<string, {
     title: string;
     year: string;
@@ -14,43 +13,60 @@ const PaperDetail = () => {
     pdfUrl?: string;
   }> = {
     "paper-1": {
-      title: "Your Paper Title 1",
-      year: "2024",
-      abstract: "This is the abstract of your paper. Provide a brief summary of the research question, methodology, and key findings.",
+      title: "7 Psychology Hacks To Stop Overthinking.",
+      year: "2023",
+      abstract: "7 psychology hacks to stop overthinking and regain control of your mind, Based on lecturers' personal research",
       content: `
-# Introduction
+# 7 Psychology Hacks To Stop Overthinking.
 
-Write your paper introduction here. Explain the background, motivation, and objectives of your research.
+Before you read these “hacks” or “tips,” remember that most of them aren’t new; you’ve probably heard them many times before. But knowing something and applying it are two different things. Think of this as a friendly reminder, not a lecture. Approach these ideas with an open mind and a genuine willingness to make small changes that can lead to a big difference in how you think and feel.
 
-## Research Question
 
-What problem does this paper address?
+1.Change the way you talk to yourself.
 
-# Methodology
+Overthinkers often keep saying negative things to themselves. 
+If you keep repeating “I can’t be on time” or “I can’t do anything” your brain starts to believe it. 
+Replacing negative self-talk with constructive phrases like “I’m improving” or “I can handle this” will have effects that you can not imagine. 
 
-Describe the methods and approaches used in your research.
+2.Let go of the past. 
 
-## Data Collection
+Overthinkers often keep thinking “I wish”, “I should have ..” 
+You cannot change the past, you cannot even change a second that just passed by.
+Learn the lessons from your past and ensure never to repeat the same mistakes again. It is easier said than done but at least trying will help you in the long run. 
 
-Explain how you collected your data.
+3.Live in the moment. 
 
-## Analysis
+Overthinkers find it hard to live in the present. The past or future is always on their mind. 
+Focus on the current moment; Focus on what is happening right now.  
+Notice the world around you, how you feel now and what you can do to make this moment meaningful. 
 
-Describe your analysis process.
+4.Challenge your thoughts. 
 
-# Results
+Overthinkers can get lost in thoughts little more than usual. 
+When a negative or useless thought appears, write it down, then tear and throw it away.
+This small act helps your brain release that thought physically and mentally.
 
-Present your findings here.
+5.Focus on what you can control. 
 
-# Conclusion
+Overthinkers often worry about things out of their control.
+Take a minute to analyze the situation; Is there something you have control over, is it something you can actually influence?
+Focus exclusively on what is within your power, when you focus on that your energy and confidence grow. 
 
-Summarize your conclusions and implications.
+6. Identify your fears. 
 
-# References
+Overthinkers usually have irrational fears and tend to suffer more often in imagination (of what “might be”) than in reality. 
+Best strategy to overcome fear? Take action!
+The moment you take action is the moment you win a battle with your overthinking. Every step weakens fear and strengthens your control over overthinking.
 
-List your references here.
+7. Write down solutions. 
+
+Overthinkers keep thinking only of the problems. 
+Instead, divert your thinking towards the solutions. 
+Write down the problems and think of one clear solution for each problem. 
+This way your brain shifts its attention from the worry to problem solving.
+I hope these tips spark something in your mind and help you see that overthinking doesn’t have to control you. Once you start applying even one of them, you’ll notice that fear and hesitation begin to fade and action slowly takes their place.
       `,
-      pdfUrl: "/path/to/your/paper.pdf" // Optional: link to PDF file
+      pdfUrl: paper1, // link to PDF file
     },
     "paper-2": {
       title: "Your Paper Title 2",

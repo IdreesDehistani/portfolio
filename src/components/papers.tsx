@@ -66,10 +66,10 @@ const Papers = () => {
       <div className="container px-6 relative z-10">
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <span className="text-primary text-sm uppercase tracking-[0.3em] font-medium">
-            Academic Papers &amp; Essays
+            Personal Blog &amp; Essays
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mt-4">
-            {isVisible && <DecryptedText text="Essays & Research" />}
+            {isVisible && <DecryptedText text="Essays & Blogs" />}
           </h2>
         </div>
 
@@ -96,7 +96,7 @@ const Papers = () => {
                     to={`/paper/${paper.id}`}
                     className="inline-flex items-center gap-2 text-sm text-primary hover:text-accent transition-colors"
                   >
-                    Read Paper
+                    Read 
                     <ExternalLink className="w-4 h-4" />
                   </Link>
                 </CardContent>

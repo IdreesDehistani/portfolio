@@ -6,8 +6,7 @@ import Certifications from "@/components/Certifications";
 import Papers from "@/components/papers";
 import Socials from "@/components/Socials";
 import Contact from "@/components/Contact";
-import Feedback from "@/components/Feedback";
-import { FloatingRobot } from "@/components/FloatingRobot";
+import FloatingRobot from "@/components/FloatingRobot";
 
 const Index = () => {
   return (
@@ -21,7 +20,7 @@ const Index = () => {
       <Papers />
       <Socials />
       <Contact />
-      <Feedback />
+      <FloatingRobot />
     </main>
   );
 };
